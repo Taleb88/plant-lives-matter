@@ -1,0 +1,25 @@
+@import '../../styles/partials/allUtils';
+
+.home {
+
+    &__logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include mobile {
+            padding-top: 9em;
+            width: 10em;
+        }
+
+        @include tablet {
+            padding-top: 7.2em;
+            width: 16em;
+            height: 15em;
+        }
+
+        @include desktop {
+            padding-top: 7.5em;
+        }
+    }   
+}

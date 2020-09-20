@@ -1,0 +1,49 @@
+@import '../../styles/partials/allUtils';
+
+.about {
+    background-color: transparent;
+
+    &__details {      
+
+        @include mobile {
+
+            &-title {
+                font-size: 2em;
+                padding-top: 5em;
+            }
+
+            &-message {
+                font-size: 1.7em;
+            }
+            
+            &-title, 
+            &-message {
+                text-align: center;
+
+                span {
+                    background-color: rgba(255,255,255,0.3);
+                }
+            }
+        }
+
+        @include tablet {
+
+            &-title {
+                padding-top: 4em;
+                font-size: 2.5em;
+            }
+ 
+            &-message {
+                font-size: 2em;
+            }
+        }
+
+        @include desktop {
+
+            &-title {
+                padding-top: 3.5em;
+                font-size: 2.75em;
+            }
+        }
+    }
+}

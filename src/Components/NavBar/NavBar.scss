@@ -1,0 +1,71 @@
+@import '../../styles/partials/allUtils';
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: fixed;
+    width: 2.75em;
+    height: 2em;
+    left: 2.25em;
+    top: 2.25em;
+
+    @include tablet {
+        width: 4em;
+        height: 3em;
+    }
+}
+
+.bm-burger-button:hover {
+
+    @include desktop {
+        width: 4.5em;
+        height: 3.5em;    
+    }
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+    background: #bdc3c7;
+}
+
+
+/* General sidebar styles */
+.bm-menu {
+    background: $dark-green;
+    padding: 2.5em 1.5em 0em;
+    font-size: 1.15em;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+    padding: 0.8em;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: bold;
+
+    @include mobile {
+        font-size: 1.2em;
+    }
+
+    @include desktop {
+        
+    }
+}
+
+/* Individual item */
+.bm-item {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    outline: 0;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
